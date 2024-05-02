@@ -7,6 +7,16 @@ message in that alphabet.
 (Hopefully in the future, some kind of computer vision/ML solution can
 be created to automatically ingest pattern PDFs)
 
+This README contains the following topics:
+
+1. [Why spreadsheets?](#why-spreadsheets)
+2. [How it works](#how-it-works)
+3. [Installation](#installation)
+ - [Demo](#demo)
+4. [Parsing](#parsing)
+5. [Message generation](#message-generation)
+6. [Current issues](#current-issues)
+
 
 # Why spreadsheets?
 
