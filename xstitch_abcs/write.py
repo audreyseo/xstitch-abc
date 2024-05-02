@@ -2,7 +2,7 @@ import os
 import argparse
 import json
 import sys
-from xstitch_alphabet.letters import CrossStitchLetter, CrossStitchMessage
+from xstitch_abcs.letters import CrossStitchLetter, CrossStitchMessage
 
 
 def parse_args():

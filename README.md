@@ -62,10 +62,10 @@ cross stitch pattern.
 
 ## Demo
 
-After installing, you can access the `xstitch_alphabet`
+After installing, you can access the `xstitch_abcs`
 python module from the command line.
 
-Running `python -m xstitch_alphabet.parse --help` produces the output:
+Running `python -m xstitch_abcs.parse --help` produces the output:
 
 ```
 usage: parse.py [-h] [--output OUTPUT] [--auto-assign] [--static] file
@@ -87,12 +87,12 @@ optional arguments:
 There are a couple of sample files that you can download as well, in
 `samples/alphabets/myalphabet.json` and `samples/csvs/myalphabet.csv`.
 
-To test out parsing, you can run `python -m xstitch_alphabet.parse -a
+To test out parsing, you can run `python -m xstitch_abcs.parse -a
 -s myalphabet.csv -o myalphabet.json`, which will produce a
 `myalphabet.json` file.
 
 Then you can try out the transcriber by running `python -m
-xstitch_alphabet.write --message 'HelloWorld!' myalphabet1.json`,
+xstitch_abcs.write --message 'HelloWorld!' myalphabet1.json`,
 which should produce
 
 ```
@@ -108,7 +108,7 @@ You can also use the `--sep` option to specify a different spacer. If
 you use a tab character, then you can copy that output and paste it
 back into a spreadsheet, where you're designing your cross stitch!
 
-
+	
 # Parsing
 
 ## Preparing your alphabet

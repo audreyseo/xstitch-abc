@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "xstitch_alphabet"
+name = "xstitch_abcs"
 version = "0.1.0"
 description = "Cross stitch alphabet utilities"
 authors = ["Audrey Seo <audreyleeseo@gmail.com>"]

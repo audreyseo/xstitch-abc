@@ -2,7 +2,7 @@ import argparse
 import os
 import sys
 import json
-from xstitch_alphabet.letters import Cell, CrossStitchLetter
+from xstitch_abcs.letters import Cell, CrossStitchLetter
 
 def parse_args():
     ap = argparse.ArgumentParser()
