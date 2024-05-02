@@ -7,7 +7,7 @@ from xstitch_alphabet.letters import Cell, CrossStitchLetter
 def parse_args():
     ap = argparse.ArgumentParser()
 
-    ap.add_argument("file", help="A CSV file containing the cross stitch alphabet you'd like to parse. x represents a normal stitch, b represents the baseline of the type, / representns a single leg of a cross, and | connects multi-part letters and punctuation, i.e., lowercase i and exclamation marks. 'B' may be used to indicate the baseline for punctuation such as apostrophes, and will be treated as being invisible.")
+    ap.add_argument("file", help="A CSV file containing the cross stitch alphabet you'd like to parse. x represents a normal stitch, b represents the baseline of the type, / represents a single leg of a cross, and | connects multi-part letters and punctuation, i.e., lowercase i and exclamation marks. 'B' may be used to indicate the baseline for punctuation such as apostrophes, and will be treated as being invisible.")
 
     ap.add_argument("--output", "-o", default="output.json",
                     help="Where to store the JSON representation of this cross stitch alphabet.")
@@ -155,7 +155,10 @@ def assignLetterNames(letters, args):
         ls = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789.,!?'"
         for i in range(min(len(letters), len(ls))):
             letters[i].setName(ls[i])
-    interactiveAssign(letters, doubleCheck=args.auto_assign)
+            pass
+        pass
+    if not args.static:
+        interactiveAssign(letters, doubleCheck=args.auto_assign)
 
     
 
